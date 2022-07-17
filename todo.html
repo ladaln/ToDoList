@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List</title>
+	<link rel="stylesheet" href="css/todo.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Your "ToDo" planner</h1>
+		<div class="todo-wrapper">
+			<div class="head">
+				<button class="btn btn--delete">Delete All</button>
+				<button id="delete-last" class="btn delete-last">Delete last</button>
+				<input class="input" type="text" id="todoName" placeholder="Enter todo …">
+				<button id="add" class="btn btn--add">Add</button>
+			</div>
+			<div class="header-advanced">
+				<p id="todo-all" class="todo-all ">All: 0</p>
+				<p id="todo-completed" class="todo-completed">Completed: 0</p>
+				<button id="show-all--btn" class="btn-show-all btn">Show All</button>
+				<button id="show-completed--btn" class="btn-show-completed btn">Show Completed</button>
+				<input id="search" type="text" class="search" placeholder="Search...">
+			</div>
+
+			<ul id="list" class="todo-list">
+			</ul>
+		</div>
+		<p class="info">
+			<i>* To add a new todo, click the <b>Add-button</b>, or press <b>Enter</b> on your keyboard<br> * To
+				delete all
+				todos, click the <b>Delete All</b> button, or press <b>Esc</b> on your keyboard
+			</i>
+		</p>
+	</div>
+
+	<script src="js/todo.js"></script>
+</body>
+
+</html>
